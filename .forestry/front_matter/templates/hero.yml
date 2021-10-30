@@ -18,5 +18,8 @@ fields:
   config:
     required: false
   label: Paragraph
-pages:
-- src/content/hero/Hero.md
+- name: hero_content
+  type: text
+  config:
+    required: false
+  label: Hero Content

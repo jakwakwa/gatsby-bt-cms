@@ -20,7 +20,7 @@ const Services = ({ title, paragraph, listHeading, list }) => {
           <p>{paragraph}</p>
           <h3>{listHeading}</h3>
           <ul>
-            {list.map(listItem => (
+            {list?.map(listItem => (
               <li key={listItem}>{listItem}</li>
             ))}
           </ul>

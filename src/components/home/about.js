@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 // import { useStaticQuery, graphql } from "gatsby"
 import { whoWeAre, whoWeAreBody } from "../../styles/layout.module.css"
 
-const About = ({ title, paragraph }) => {
+const About = ({ title, paragraph, secondParagraph }) => {
   // const data = useStaticQuery(graphql`
   //   query AboutQuery {
   //     allMdx {
@@ -22,6 +22,7 @@ const About = ({ title, paragraph }) => {
     <div id="about" className={whoWeAre} style={{ display: "flex" }}>
       <div className={whoWeAreBody} style={{ width: "50%" }}>
         <h1>{title}</h1>
+        <p>{paragraph}</p>
         <p>{paragraph}</p>
       </div>
       <div style={{ width: "50%" }}>

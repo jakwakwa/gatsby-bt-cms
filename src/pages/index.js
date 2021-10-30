@@ -21,12 +21,14 @@ const IndexPage = () => {
           secondary_heading
           about_title
           about_paragraph
+          about_paragraph_two
         }
       }
       allMdx {
         nodes {
           frontmatter {
             about_paragraph
+            about_paragraph_two
             about_title
             serviceslist_heading
             services_paragraph
@@ -42,13 +44,16 @@ const IndexPage = () => {
   const jsStr = JSON.parse(str)
   console.log(jsStr)
 
-  const aboutTitle = jsStr.allMdx.nodes[1].frontmatter.about_title
-  const aboutParagraph = jsStr.allMdx.nodes[1].frontmatter.about_paragraph
-  const servParagraph = jsStr.allMdx.nodes[2].frontmatter.services_paragraph
-  const servTitle = jsStr.allMdx.nodes[2].frontmatter.services_title
-  const servListHeading = jsStr.allMdx.nodes[2].frontmatter.serviceslist_heading
+  const aboutTitle = jsStr.allMdx.nodes[2].frontmatter.about_title
+  const aboutParagraph = jsStr.allMdx.nodes[2].frontmatter.about_paragraph
+  const aboutParagraphSecond =
+    jsStr.allMdx.nodes[2].frontmatter.about_paragraph_two
+  const servParagraph = jsStr.allMdx.nodes[1].frontmatter.services_paragraph
 
-  const servList = jsStr.allMdx.nodes[2].frontmatter.services_list
+  const servTitle = jsStr.allMdx.nodes[1].frontmatter.services_title
+  const servListHeading = jsStr.allMdx.nodes[1].frontmatter.serviceslist_heading
+
+  const servList = jsStr.allMdx.nodes[1].frontmatter.services_list
 
   return (
     <>
@@ -87,7 +92,11 @@ const IndexPage = () => {
           listHeading={servListHeading}
           list={servList}
         />
-        <About title={aboutTitle} paragraph={aboutParagraph} />
+        <About
+          title={aboutTitle}
+          paragraph={aboutParagraph}
+          secondParagraph={aboutParagraphSecond}
+        />
       </Layout>
     </>
   )

@@ -17,5 +17,15 @@ list-info: |-
   Visualizers
   Reporting Specialists
   Story Tellers
+list_services_info:
+- Story Tellers
+- Data Scientists
+- Data Engineers
+- Data Analysts
+- Data Architects
+- Business Intelligence Developers
+- Visualizers
+- Reporting Specialists
+- Machine Learning Engineers
 
 ---

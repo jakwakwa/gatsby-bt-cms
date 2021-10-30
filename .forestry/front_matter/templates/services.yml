@@ -14,5 +14,3 @@ fields:
   config:
     required: false
   label: List Heading
-pages:
-- src/content/services/services.md

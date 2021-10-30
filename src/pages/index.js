@@ -72,13 +72,13 @@ const IndexPage = () => {
             style={{
               width: "60%",
               position: "absolute",
-              top: "7rem",
-              right: "2rem",
+              top: "10rem",
+              right: "0rem",
             }}
           >
             <StaticImage
               src="../images/hero-img.png"
-              width={900}
+              width={800}
               quality={95}
               formats={["auto", "webp", "avif"]}
               alt="A Gatsby astronaut"

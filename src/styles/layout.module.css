@@ -4,8 +4,11 @@
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
-  position: relative;
-  z-index: 99999;
+  position: fixed;
+  width: 100vw;
+  /* height: 70px; */
+  z-index: 9999999999;
+  top: 0;
 }
 .headerStyles a:hover {
   color: #61dec8;
@@ -25,10 +28,10 @@
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
   padding-top: 70px;
-  background-size: 100vw;
+  background-size: 103vw;
   background-repeat: no-repeat;
-  width: 114vw;
-  left: 0;
+  width: 133vw;
+  left: -4px;
   height: 1330px;
   background-position-x: -5px;
   background-position-y: -58px;
@@ -48,8 +51,9 @@
   width: 94vw;
   height: 641px;
   background-position-x: -132px;
-  background-position-y: -29px;
+  background-position-y: -59px;
   overflow: hidden;
+  margin-top: 83px;
 }
 
 .headerdiv {
@@ -64,16 +68,19 @@
 .hero h1,
 .hero h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 42px;
+  font-size: 50px;
   color: #265d69;
   font-weight: 800;
   line-height: 1.1;
   padding: 0;
   margin: 0;
+
+  margin-top: 30px;
   text-transform: uppercase;
 }
 .hero h2 {
-  margin-bottom: 30px;
+  margin: 0;
+  margin-bottom: 40px;
   color: #5dc1ae;
   text-transform: uppercase;
 }
@@ -81,9 +88,10 @@
   font-family: "Montserrat", sans-serif;
   font-size: 21px;
   font-weight: 600;
-  line-height: 1.5;
-  max-width: 70%;
-  color: #6a817d;
+  line-height: 1.8;
+  padding-left: 0px;
+  max-width: 75%;
+  color: #7397a3;
 }
 .whatWeDo {
   /* background-color: aquamarine; */
@@ -98,8 +106,8 @@
 .whoWeAre {
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 70px;
+  padding-bottom: 10px;
 }
 .whoWeAreBody {
   padding-left: 50px;
@@ -145,13 +153,13 @@
   font-weight: 600;
   line-height: 1.7;
   max-width: 90%;
-  color: #6a817d;
+  color: #7397a3;
 }
 .whatWeDo ul li {
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.1;
   max-width: 70%;
   color: #eef1f1;
 }

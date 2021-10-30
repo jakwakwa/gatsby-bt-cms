@@ -1,4 +1,32 @@
 ---
 label: What We Do
 hide_body: false
-fields: []
+fields:
+- name: title_who_we_are
+  type: text
+  config:
+    required: false
+  label: Title
+- name: paragraph_who_we_are
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Paragraph
+- name: list_heading_who_we_are
+  type: text
+  config:
+    required: false
+  label: List Heading
+- name: list_who_we_are
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: List

@@ -1,16 +1,18 @@
 import * as React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import { useStaticQuery, graphql } from "gatsby"
+// import { useStaticQuery, graphql } from "gatsby"
 import { whoWeAre, whoWeAreBody } from "../../styles/layout.module.css"
 
-const About = () => {
+const About = ({ title, paragraph }) => {
   // const data = useStaticQuery(graphql`
   //   query AboutQuery {
-  //     mdx {
-  //       frontmatter {
-  //           title-about
-  //           paragraph-about
+  //     allMdx {
+  //       nodes {
+  //         frontmatter {
+  //           about_paragraph
+  //           about_title
+  //         }
   //       }
   //     }
   //   }
@@ -19,8 +21,8 @@ const About = () => {
   return (
     <div className={whoWeAre} style={{ display: "flex" }}>
       <div className={whoWeAreBody} style={{ width: "50%" }}>
-        {/* <h1>{data.mdx.frontmatter.title_about}</h1>
-        <p>{data.mdx.frontmatter.paragraph_about}</p> */}
+        <h1>{title}</h1>
+        <p>{paragraph}</p>
       </div>
       <div style={{ width: "50%" }}>
         <StaticImage

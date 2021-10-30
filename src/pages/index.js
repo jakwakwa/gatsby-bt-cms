@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
@@ -7,13 +7,8 @@ import Seo from "../components/seo"
 
 import { useStaticQuery, graphql } from "gatsby"
 
-import {
-  hero,
-  whatWeDo,
-  whatWeDoBody,
-  whoWeAre,
-  whoWeAreBody,
-} from "../styles/layout.module.css"
+import { hero, whatWeDo, whatWeDoBody } from "../styles/layout.module.css"
+import About from "../components/home/about"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -23,10 +18,39 @@ const IndexPage = () => {
           heading
           paragraph
           secondary_heading
+          about_title
+          about_paragraph
+        }
+      }
+      allMdx {
+        nodes {
+          frontmatter {
+            about_paragraph
+            about_title
+          }
         }
       }
     }
   `)
+
+  const str = JSON.stringify(data)
+  const jsStr = JSON.parse(str)
+
+  const aboutTitle = jsStr.allMdx.nodes[1].frontmatter.about_title
+  const aboutParagraph = jsStr.allMdx.nodes[1].frontmatter.about_paragraph
+
+  // const aboutData = useStaticQuery(graphql`
+  //   query HeroQuery {
+  //     allMdx {
+  //       nodes {
+  //         frontmatter {
+  //           about_paragraph
+  //           about_title
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
   // const [heading, secondary_heading, paragraph] = data.mdx.frontmatter
   return (
     <>
@@ -85,49 +109,8 @@ const IndexPage = () => {
             </ul>
           </div>
         </div>
-
-        <div className={whoWeAre} style={{ display: "flex" }}>
-          <div className={whoWeAreBody} style={{ width: "50%" }}>
-            <h1>
-              Who we <area shape="" coords="" href="" alt="" />
-            </h1>
-            <p>
-              BigTalent was established by Thelma Kruger to service the gap in
-              this niche field. A highly-skilled specialist, she mastered the
-              art of recruitment while working at a large, JSE-listed corporate
-              recruitment organisation for 13 years, where she achieved many
-              highly regarded industry top awards, including including Top
-              consultant, Top team lead and Best performing branch.
-            </p>
-            <p>
-              As founder of BigTalent, Thelma’s expertise includes the placement
-              of technical Quantitative, Actuarial and Finance professionals
-              throughout South Africa. She has recruited for large banks and
-              listed corporates, as well as SMEs and start-ups. Specific
-              companies include ABSA, FNB, The Reserve Bank, as well as
-              non-financial services at such companies as Barloworld, Bidvest
-              and Imperial, to name a few. Thelma works with her team of
-              researchers to identify and track top talent in the market.
-            </p>
-          </div>
-          <div style={{ width: "50%" }}>
-            <StaticImage
-              src="../images/who-we-are.png"
-              // width={300}
-              quality={95}
-              formats={["auto", "webp", "avif"]}
-              alt="A Gatsby astronaut"
-              style={{ marginBottom: `1.45rem` }}
-            />
-          </div>
-        </div>
-        {/*
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-      <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-      <Link to="/using-dsg">Go to "Using DSG"</Link>
-    </p> */}
+        {/* <pre>{JSON.stringify(aboutData, null, 4)}</pre> */}
+        <About title={aboutTitle} paragraph={aboutParagraph} />
       </Layout>
     </>
   )

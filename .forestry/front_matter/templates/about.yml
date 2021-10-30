@@ -1,14 +1,14 @@
 ---
 label: About
 hide_body: true
-display_field: title-about
+display_field: title_about
 fields:
-- name: title-about
+- name: title_about
   type: text
   config:
     required: false
   label: Title
-- name: paragraph-about
+- name: paragraph_about
   type: textarea
   default: ''
   config:

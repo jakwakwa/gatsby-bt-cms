@@ -4,16 +4,13 @@ auto_deploy: false
 admin_path: "/static/admin/"
 webhook_url: 
 sections:
-- type: document
-  path: src/content/hero/**/*
-  label: Hero
 - type: directory
-  path: src/content/posts
-  label: Posts
+  path: src/content/hero
+  label: Hero
   create: documents
   match: "**/*"
   templates:
-  - blog
+  - hero
 upload_dir: static/uploads
 public_path: "/static/uploads"
 front_matter_path: ''

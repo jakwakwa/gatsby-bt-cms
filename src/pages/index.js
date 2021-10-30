@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 
 import { useStaticQuery, graphql } from "gatsby"
 
-import { hero } from "../styles/layout.module.css"
+import { hero, headerdiv } from "../styles/layout.module.css"
 import About from "../components/home/about"
 import Services from "../components/home/services"
 
@@ -85,6 +85,7 @@ const IndexPage = () => {
             />
           </div>
         </div>
+        <div className={headerdiv}></div>
 
         <Services
           title={servTitle}

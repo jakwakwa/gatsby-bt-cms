@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
 
+.header {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  position: relative;
+  z-index: 99999;
+}
 .headerStyles a:hover {
   color: #61dec8;
   background-color: #265d69;
@@ -8,16 +15,50 @@
 .headerStyles a {
   border-radius: 5px;
   padding: 10px;
-  color: #d1dad8;
+  color: #50b0a3;
   transition: background-color 0.2s ease-in;
   font-size: 14px;
 }
+.servicesBg {
+  background-image: url("../images/cpconceptp2.png");
 
-.hero {
-  /* background-color: aquamarine; */
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
   padding-top: 70px;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  width: 114vw;
+  left: 0;
+  height: 1330px;
+  background-position-x: -5px;
+  background-position-y: -58px;
+  overflow: hidden;
+  position: absolute;
+  top: 741px;
+  z-index: -9;
+}
+.hero {
+  background-image: url("../images/cpconceptp1.png");
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  padding-top: 70px;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  width: 94vw;
+  height: 641px;
+  background-position-x: -132px;
+  background-position-y: -29px;
+  overflow: hidden;
+}
+
+.headerdiv {
+  height: 18px;
+  background-color: #265d69;
+  position: absolute;
+  z-index: 999999999;
+  left: 0;
+  width: 102vw;
 }
 
 .hero h1,
@@ -64,47 +105,55 @@
   padding-left: 50px;
 }
 
-.whatWeDo h1,
+.whatWeDo h1 {
+  /* background-color: aquamarine; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 42px;
+  padding-top: 50px;
+  color: #aaeded;
+  text-transform: uppercase;
+}
+
 .whoWeAre h1 {
   /* background-color: aquamarine; */
   font-family: "Montserrat", sans-serif;
   font-size: 42px;
   padding-top: 50px;
-  color: #61dec8;
-  text-transform: uppercase;
-}
-.whatWeDo h1,
-.whoWeAre h1 {
-  /* background-color: aquamarine; */
-  font-family: "Montserrat", sans-serif;
-  font-size: 36px;
-  padding-top: 50px;
   color: #265d69;
+  text-transform: uppercase;
 }
 .whatWeDo h3 {
   /* background-color: aquamarine; */
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
-  padding-top: 50px;
-  color: #50b0a3;
+  padding-top: 20px;
+  color: #e4f5f3;
 }
 
-.whatWeDo p,
+.whatWeDo p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7;
+  max-width: 90%;
+  color: #ffffff;
+}
+
 .whoWeAre p {
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 600;
   line-height: 1.7;
   max-width: 90%;
   color: #6a817d;
 }
 .whatWeDo ul li {
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 600;
   line-height: 1.5;
   max-width: 70%;
-  color: #4e615e;
+  color: #eef1f1;
 }
 
 .footer {

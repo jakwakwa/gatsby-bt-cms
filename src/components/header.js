@@ -2,15 +2,10 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import { headerStyles } from "../styles/layout.module.css"
+import { headerStyles, header } from "../styles/layout.module.css"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `#043640`,
-      marginBottom: `1.45rem`,
-    }}
-  >
+  <header className={header}>
     <div
       style={{
         margin: `0 auto`,

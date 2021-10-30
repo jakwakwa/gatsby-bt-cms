@@ -6,19 +6,9 @@ import { headerStyles, header } from "../styles/layout.module.css"
 
 const Header = ({ siteTitle }) => (
   <header className={header}>
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: "100%",
-        padding: `10px 2.0875rem`,
-        paddingTop: "16px",
-        display: "flex",
-        justifyContent: "space-between",
-      }}
-    >
+    <div>
       <StaticImage
         src="../../src/images/bt-logo.png"
-        width={200}
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt="A Gatsby astronaut"

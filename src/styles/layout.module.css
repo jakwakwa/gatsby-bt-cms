@@ -6,9 +6,23 @@
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
   position: fixed;
   width: 100vw;
-  /* height: 70px; */
+  height: 70px;
   z-index: 9999999999;
   top: 0;
+}
+.header > div {
+  padding: 08px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.layoutstyles {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header div div div {
+  max-width: 200px !important;
 }
 .headerStyles a:hover {
   color: #61dec8;
@@ -49,11 +63,22 @@
   background-size: 100vw;
   background-repeat: no-repeat;
   width: 94vw;
-  height: 641px;
-  background-position-x: -132px;
-  background-position-y: -59px;
+  height: 661px;
+  background-position-x: -89px;
+  background-position-y: -54px;
   overflow: hidden;
-  margin-top: 83px;
+  margin-top: 64px;
+  display: flex;
+}
+.hero > div {
+  width: 40%;
+}
+
+.hero .heroImg {
+  width: 60%;
+  position: absolute;
+  top: 10rem;
+  right: 0rem;
 }
 
 .headerdiv {
@@ -106,7 +131,7 @@
 .whoWeAre {
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
-  padding-top: 70px;
+  padding-top: 150px;
   padding-bottom: 10px;
 }
 .whoWeAreBody {
@@ -178,4 +203,181 @@
 .footer a {
   color: white;
   font-weight: 800;
+}
+
+@media (max-width: 460px) {
+  .hero {
+    background-image: none;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    padding-top: 70px;
+    background-size: initial;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    background-position-x: initial;
+    background-position-y: initial;
+    overflow: hidden;
+    margin-top: 33px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+  }
+
+  .hero > div {
+    width: 100%;
+  }
+
+  .hero h1,
+  .hero h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    color: #265d69;
+    font-weight: 800;
+    line-height: 1.1 !important;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    margin-top: 30px;
+    text-transform: uppercase;
+    padding: 0 20px;
+  }
+  .hero h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #5dc1ae;
+    text-transform: uppercase;
+  }
+  .hero p {
+    font-size: 14px;
+    text-align: center;
+    max-width: 100%;
+    padding: 0 30px;
+  }
+  .hero .heroImg {
+    width: 84%;
+    position: absolute;
+    top: 27rem;
+    right: 2rem;
+  }
+  .headerStyles {
+    padding: 0px 0px;
+  }
+
+  .layoutstyles {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .header > div {
+    margin: 0;
+    max-width: 100%;
+    padding: 10px 20px;
+    padding-top: 11px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header > div > div {
+    margin-top: 3px;
+  }
+  .headerdiv {
+    width: 100vw;
+  }
+  .headerStyles > a {
+    margin-right: 10px !important;
+    font-size: 13px;
+    line-height: 0.2;
+    padding: 2px !important;
+  }
+  h1 {
+    line-height: 0.6 !important;
+  }
+  .header .gatsby-image-wrapper {
+    max-width: 100px !important;
+  }
+  .header div img {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  .header div div div {
+    max-width: 130px !important;
+  }
+  .whatWeDo {
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  .whatWeDo h1 {
+    font-size: 30px;
+  }
+
+  .whatWeDo > div {
+    margin-top: 0 !important;
+    width: 61%;
+    right: 0px;
+    margin-top: 17px;
+    align-self: self-end;
+  }
+
+  .servicesBg {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    padding-top: 70px;
+    background-size: 519vw;
+    background-repeat: no-repeat;
+    width: 100vw;
+    left: 8px;
+    height: 1254px;
+    background-position-x: -586px;
+    background-position-y: -93px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    top: 735px;
+    z-index: -9;
+  }
+
+  .whatWeDoBody {
+    width: 100% !important;
+    padding-left: 30px;
+  }
+
+  .whatWeDo {
+    background-color: rgba(0, 82, 78, 0.596);
+  }
+
+  .whoWeAre {
+    background-color: #ffffff;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    width: 100% !important;
+    padding-bottom: 50px;
+  }
+
+  .whoWeAre p {
+    max-width: 100%;
+  }
+
+  .whoWeAreBody {
+    width: 100% !important;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 10px;
+  }
+  .whoWeAre div:last-child {
+    height: 230px;
+    width: 70% !important;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+    margin-left: 20px;
+    /* text-align: center; */
+  }
 }

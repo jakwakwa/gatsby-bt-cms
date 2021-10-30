@@ -8,6 +8,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { layoutstyles } from "../styles/layout.module.css"
 
 import Header from "./header"
 import "./layout.css"
@@ -28,13 +29,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1200,
-          padding: `0 1.0875rem 1rem`,
-        }}
-      >
+      <div className={layoutstyles}>
         <main>{children}</main>
       </div>
       <footer

@@ -22,13 +22,6 @@ module.exports = {
         path: `${__dirname}/src/content/hero`,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-page-creator`,
-    //   options: {
-    //     name: `hero`,
-    //     path: `${__dirname}/src/hero`,
-    //   },
-    // },
     `gatsby-plugin-mdx`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

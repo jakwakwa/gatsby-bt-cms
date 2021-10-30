@@ -1,6 +1,7 @@
 ---
 label: What We Do
 hide_body: false
+display_field: title_who_we_are
 fields:
 - name: title_who_we_are
   type: text

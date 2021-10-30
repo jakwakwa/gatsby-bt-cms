@@ -3,14 +3,14 @@ label: What We Do
 hide_body: true
 fields:
 - type: text
-  name: title-about
-  label: title-about
+  name: title-info
+  label: Title
 - type: textarea
-  name: paragraph-about
-  label: paragraph-about
+  name: paragraph-info
+  label: Paragraph
 - type: text
-  name: list_heading_about
-  label: list_heading_about
+  name: list_info
+  label: List Title
 - type: text
-  name: list_about
-  label: list_about
+  name: list_info_what
+  label: List

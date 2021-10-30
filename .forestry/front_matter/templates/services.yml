@@ -10,7 +10,8 @@ fields:
   name: services_paragraph
   label: Paragraph
   default: ''
-  config: 
+  config:
+    wysiwyg: false
   required: false
   wysiwyg: false
   schema:

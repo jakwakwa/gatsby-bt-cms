@@ -27,5 +27,10 @@ list_services_info:
 - Visualizers
 - Reporting Specialists
 - Machine Learning Engineers
+title_services: What we do
+paragraph_services: knlknlnlk
+list_services_title: lknlknlnn
+list_services:
+- uno
 
 ---

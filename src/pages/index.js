@@ -9,6 +9,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import { hero, whatWeDo, whatWeDoBody } from "../styles/layout.module.css"
 import About from "../components/home/about"
+import Services from "../components/home/services"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -20,6 +21,9 @@ const IndexPage = () => {
           secondary_heading
           about_title
           about_paragraph
+          serv_list_heading
+          serv_paragraph
+          serv_title
         }
       }
       allMdx {
@@ -27,6 +31,9 @@ const IndexPage = () => {
           frontmatter {
             about_paragraph
             about_title
+            serv_list_heading
+            serv_paragraph
+            serv_title
           }
         }
       }
@@ -38,20 +45,10 @@ const IndexPage = () => {
 
   const aboutTitle = jsStr.allMdx.nodes[1].frontmatter.about_title
   const aboutParagraph = jsStr.allMdx.nodes[1].frontmatter.about_paragraph
+  const servParagraph = jsStr.allMdx.nodes[1].frontmatter.serv_paragraph
+  const servTitle = jsStr.allMdx.nodes[1].frontmatter.serv_title
+  const servListHeading = jsStr.allMdx.nodes[1].frontmatter.serv_list_heading
 
-  // const aboutData = useStaticQuery(graphql`
-  //   query HeroQuery {
-  //     allMdx {
-  //       nodes {
-  //         frontmatter {
-  //           about_paragraph
-  //           about_title
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-  // const [heading, secondary_heading, paragraph] = data.mdx.frontmatter
   return (
     <>
       <Layout>
@@ -84,33 +81,14 @@ const IndexPage = () => {
               style={{ marginBottom: `1.45rem` }}
             />
           </div>
-          <div className={whatWeDoBody} style={{ width: "50%" }}>
-            <h1>What we do</h1>
-            <p>
-              BigTalent believes in the value of using data, analytics
-              techniques, and scientific principles to support economic growth
-              and sustainability of businesses, especially during these
-              turbulent economic times. This is why we focus our recruitment
-              activities in this space, dedicated to connecting exceptional data
-              talent to our clients, so that ambitious projects can come to
-              fruition
-            </p>
-            <h3>Specialist recruitment position</h3>
-            <ul>
-              <li>Data Scientists</li>
-              <li>Data Engineers</li>
-              <li>Machine Learning Engineers</li>
-              <li>Data Analysts</li>
-              <li>Data Architects</li>
-              <li>Business Intelligence Developers</li>
-              <li>Visualizers</li>
-              <li>Reporting Specialists</li>
-              <li>Story Tellers</li>
-            </ul>
-          </div>
         </div>
         {/* <pre>{JSON.stringify(aboutData, null, 4)}</pre> */}
         <About title={aboutTitle} paragraph={aboutParagraph} />
+        <Services
+          title={servTitle}
+          paragraph={servParagraph}
+          listHeading={servListHeading}
+        />
       </Layout>
     </>
   )

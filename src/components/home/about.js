@@ -19,7 +19,7 @@ const About = ({ title, paragraph }) => {
   // `)
 
   return (
-    <div className={whoWeAre} style={{ display: "flex" }}>
+    <div id="about" className={whoWeAre} style={{ display: "flex" }}>
       <div className={whoWeAreBody} style={{ width: "50%" }}>
         <h1>{title}</h1>
         <p>{paragraph}</p>

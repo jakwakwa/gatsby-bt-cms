@@ -3,22 +3,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { whatWeDo, whatWeDoBody } from "../../styles/layout.module.css"
 
-const Services = () => {
-  // const data = useStaticQuery(graphql`
-  //   query ServicesQuery {
-  //     mdx {
-  //       frontmatter {
-  //           title-info
-  //           paragraph-info
-  //           list_info_title
-  //           list_services_info
-  //       }
-  //     }
-  //   }
-  // `)
-
+const Services = ({ title, paragraph, listHeading }) => {
   return (
-    <div>
+    <div id="services">
       <div className={whatWeDo} style={{ display: "flex" }}>
         <div style={{ width: "50%" }}>
           <StaticImage
@@ -31,9 +18,9 @@ const Services = () => {
           />
         </div>
         <div className={whatWeDoBody} style={{ width: "50%" }}>
-          {/* <h1>{data.mdx.frontmatter.title_info}</h1>
-          <p>{data.mdx.frontmatter.paragraph_info}</p>
-          <h3>{data.mdx.frontmatter.list_info_title}</h3> */}
+          <h1>{title}</h1>
+          <p>{paragraph}</p>
+          <h3>{listHeading}</h3>
           <ul>
             <li>Data Scientists</li>
             <li>Data Engineers</li>

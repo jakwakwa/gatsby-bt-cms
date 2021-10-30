@@ -15,6 +15,8 @@ const Header = ({ siteTitle }) => (
         margin: `0 auto`,
         maxWidth: 1200,
         padding: `1rem 1.0875rem`,
+        display: "flex",
+        justifyContent: "space-between",
       }}
     >
       <StaticImage
@@ -24,17 +26,31 @@ const Header = ({ siteTitle }) => (
         formats={["auto", "webp", "avif"]}
         alt="A Gatsby astronaut"
       />
-      {/* <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: 0 }}>
         <Link
-          to="/"
+          to="#about"
           style={{
             color: `white`,
+            fontSize: `14px`,
             textDecoration: `none`,
+            fontFamily: "Montserrat",
+            marginRight: `40px`,
           }}
         >
-          {siteTitle}
+          {`Who We Are`}
         </Link>
-      </h1> */}
+        <Link
+          to="#services"
+          style={{
+            color: `white`,
+            fontSize: `14px`,
+            textDecoration: `none`,
+            fontFamily: "Montserrat",
+          }}
+        >
+          {`What We Do`}
+        </Link>
+      </h1>
     </div>
   </header>
 )

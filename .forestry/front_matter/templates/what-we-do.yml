@@ -9,8 +9,8 @@ fields:
   name: paragraph-info
   label: Paragraph
 - type: text
-  name: list_info
+  name: list_info_title
   label: List Title
 - type: text
-  name: list_info_what
+  name: list_info
   label: List

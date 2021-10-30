@@ -1,0 +1,10 @@
+---
+label: Services
+hide_body: true
+fields:
+- type: text
+  name: about_title
+  label: about_title
+- type: textarea
+  name: about_paragraph
+  label: about_paragraph

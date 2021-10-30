@@ -4,24 +4,15 @@ hide_body: true
 display_field: title-info
 fields:
 - type: text
-  name: title-info
+  name: title_services
   label: Title
 - type: textarea
-  name: paragraph-info
+  name: paragraph_services
   label: Paragraph
 - type: text
-  name: list_info_title
+  name: list_services_title
   label: List Title
-- name: list-info
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: List
-- name: list_services_info
+- name: list_services
   type: list
   config:
     use_select: false

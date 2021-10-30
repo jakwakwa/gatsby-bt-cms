@@ -9,8 +9,6 @@ sections:
   label: Services
   create: documents
   match: "**/*"
-  templates:
-  - services
 - type: directory
   path: src/content/about
   label: About

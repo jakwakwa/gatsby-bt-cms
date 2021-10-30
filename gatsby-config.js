@@ -29,10 +29,7 @@ module.exports = {
     //     path: `${__dirname}/src/hero`,
     //   },
     // },
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {},
-    },
+    `gatsby-plugin-mdx`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

@@ -2,36 +2,36 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { headerStyles } from "../styles/layout.module.css"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#206A7A`,
+      background: `#043640`,
       marginBottom: `1.45rem`,
     }}
   >
     <div
       style={{
         margin: `0 auto`,
-        maxWidth: 1200,
-        padding: `1rem 1.0875rem`,
+        maxWidth: "100%",
+        padding: `10px 2.0875rem`,
+        paddingTop: "16px",
         display: "flex",
         justifyContent: "space-between",
       }}
     >
       <StaticImage
         src="../../src/images/bt-logo.png"
-        width={300}
+        width={200}
         quality={95}
         formats={["auto", "webp", "avif"]}
         alt="A Gatsby astronaut"
       />
-      <h1 style={{ margin: 0 }}>
+      <h1 className={headerStyles} style={{ margin: 0 }}>
         <Link
           to="#about"
           style={{
-            color: `white`,
-            fontSize: `14px`,
             textDecoration: `none`,
             fontFamily: "Montserrat",
             marginRight: `40px`,
@@ -42,8 +42,6 @@ const Header = ({ siteTitle }) => (
         <Link
           to="#services"
           style={{
-            color: `white`,
-            fontSize: `14px`,
             textDecoration: `none`,
             fontFamily: "Montserrat",
           }}

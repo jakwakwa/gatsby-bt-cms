@@ -13,7 +13,6 @@ const Services = ({ title, paragraph, listHeading, list }) => {
             quality={95}
             formats={["auto", "webp", "avif"]}
             alt="A Gatsby astronaut"
-            style={{ marginBottom: `1.45rem` }}
           />
         </div>
         <div className={whatWeDoBody} style={{ width: "50%" }}>

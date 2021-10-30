@@ -54,20 +54,29 @@ const IndexPage = () => {
     <>
       <Layout>
         <Seo title="Home" />
-        <div className={hero} style={{ display: "flex" }}>
+        <div
+          className={hero}
+          style={{ display: "flex", paddingBottom: "90px" }}
+        >
           <div style={{ width: "40%" }}>
             <h1>{data.mdx.frontmatter.heading}</h1>
             <h2>{data.mdx.frontmatter.secondary_heading}</h2>
             <p>{data.mdx.frontmatter.paragraph}</p>
           </div>
-          <div style={{ width: "60%" }}>
+          <div
+            style={{
+              width: "60%",
+              position: "absolute",
+              top: "7rem",
+              right: "2rem",
+            }}
+          >
             <StaticImage
               src="../images/hero-img.png"
-              // width={300}
+              width={900}
               quality={95}
               formats={["auto", "webp", "avif"]}
               alt="A Gatsby astronaut"
-              style={{ marginBottom: `1.45rem` }}
             />
           </div>
         </div>

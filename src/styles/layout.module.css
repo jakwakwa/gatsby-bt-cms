@@ -1,10 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
 
+.headerStyles a:hover {
+  color: #61dec8;
+  background-color: #265d69;
+}
+
+.headerStyles a {
+  border-radius: 5px;
+  padding: 10px;
+  color: #d1dad8;
+  transition: background-color 0.2s ease-in;
+  font-size: 14px;
+}
+
 .hero {
   /* background-color: aquamarine; */
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 .hero h1,
@@ -26,10 +39,10 @@
 .hero p {
   font-family: "Montserrat", sans-serif;
   font-size: 21px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.5;
   max-width: 70%;
-  color: #7e7e7e;
+  color: #6a817d;
 }
 .whatWeDo {
   /* background-color: aquamarine; */
@@ -58,6 +71,7 @@
   font-size: 42px;
   padding-top: 50px;
   color: #61dec8;
+  text-transform: uppercase;
 }
 .whatWeDo h1,
 .whoWeAre h1 {
@@ -72,7 +86,7 @@
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   padding-top: 50px;
-  color: #61dec8;
+  color: #50b0a3;
 }
 
 .whatWeDo p,
@@ -82,15 +96,15 @@
   font-weight: 400;
   line-height: 1.7;
   max-width: 90%;
-  color: #7e7e7e;
+  color: #6a817d;
 }
 .whatWeDo ul li {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.5;
   max-width: 70%;
-  color: #7e7e7e;
+  color: #4e615e;
 }
 
 .footer {

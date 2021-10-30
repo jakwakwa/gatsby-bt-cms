@@ -1,5 +1,4 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { whatWeDo, whatWeDoBody } from "../../styles/layout.module.css"
 

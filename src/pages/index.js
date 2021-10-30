@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 
 import { useStaticQuery, graphql } from "gatsby"
 
-import { hero, whatWeDo, whatWeDoBody } from "../styles/layout.module.css"
+import { hero } from "../styles/layout.module.css"
 import About from "../components/home/about"
 import Services from "../components/home/services"
 
@@ -21,9 +21,6 @@ const IndexPage = () => {
           secondary_heading
           about_title
           about_paragraph
-          serv_list_heading
-          serv_paragraph
-          serv_title
         }
       }
       allMdx {
@@ -31,9 +28,9 @@ const IndexPage = () => {
           frontmatter {
             about_paragraph
             about_title
-            serv_list_heading
-            serv_paragraph
-            serv_title
+            serviceslist_heading
+            services_paragraph
+            services_title
           }
         }
       }
@@ -42,12 +39,13 @@ const IndexPage = () => {
 
   const str = JSON.stringify(data)
   const jsStr = JSON.parse(str)
+  console.log(jsStr)
 
   const aboutTitle = jsStr.allMdx.nodes[1].frontmatter.about_title
   const aboutParagraph = jsStr.allMdx.nodes[1].frontmatter.about_paragraph
-  const servParagraph = jsStr.allMdx.nodes[1].frontmatter.serv_paragraph
-  const servTitle = jsStr.allMdx.nodes[1].frontmatter.serv_title
-  const servListHeading = jsStr.allMdx.nodes[1].frontmatter.serv_list_heading
+  const servParagraph = jsStr.allMdx.nodes[2].frontmatter.services_paragraph
+  const servTitle = jsStr.allMdx.nodes[2].frontmatter.services_title
+  const servListHeading = jsStr.allMdx.nodes[2].frontmatter.serviceslist_heading
 
   return (
     <>
@@ -70,19 +68,7 @@ const IndexPage = () => {
             />
           </div>
         </div>
-        <div className={whatWeDo} style={{ display: "flex" }}>
-          <div style={{ width: "50%" }}>
-            <StaticImage
-              src="../images/Metaphor_illustration.png"
-              // width={300}
-              quality={95}
-              formats={["auto", "webp", "avif"]}
-              alt="A Gatsby astronaut"
-              style={{ marginBottom: `1.45rem` }}
-            />
-          </div>
-        </div>
-        {/* <pre>{JSON.stringify(aboutData, null, 4)}</pre> */}
+
         <About title={aboutTitle} paragraph={aboutParagraph} />
         <Services
           title={servTitle}

@@ -9,6 +9,12 @@ fields:
   - type: textarea
     name: services_paragraph
     label: Paragraph
+    default: ""
+    config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
   - name: serviceslist_heading
     type: text
     config:

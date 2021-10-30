@@ -7,7 +7,7 @@ fields:
   config:
     required: false
   label: Title
-- name: paragraph-who-we-are
+- name: paragraph-about
   type: textarea
   default: ''
   config:
@@ -16,3 +16,17 @@ fields:
     schema:
       format: markdown
   label: Paragraph
+- name: list_heading_about
+  type: text
+  config:
+    required: false
+  label: List Heading
+- name: list_about
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: List

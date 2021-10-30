@@ -5,6 +5,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import { useStaticQuery, graphql } from "gatsby"
+
 import {
   hero,
   whatWeDo,
@@ -13,8 +15,19 @@ import {
   whoWeAreBody,
 } from "../styles/layout.module.css"
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = () => {
+  //   const data = useStaticQuery(graphql`
+  //   query HeaderQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
+
+  return
+  ;<Layout>
     <Seo title="Home" />
     <div className={hero} style={{ display: "flex" }}>
       <div style={{ width: "40%" }}>
@@ -115,6 +128,5 @@ const IndexPage = () => (
       <Link to="/using-dsg">Go to "Using DSG"</Link>
     </p> */}
   </Layout>
-)
-
+}
 export default IndexPage

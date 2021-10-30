@@ -15,6 +15,24 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `hero`,
+        path: `${__dirname}/src/content/hero`,
+      },
+    },
+    // {
+    //   resolve: `gatsby-plugin-page-creator`,
+    //   options: {
+    //     name: `hero`,
+    //     path: `${__dirname}/src/hero`,
+    //   },
+    // },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {},
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

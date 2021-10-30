@@ -9,7 +9,7 @@ sections:
   label: About
   create: all
   match: "**/*"
-  new_doc_ext: ".mdx"
+  new_doc_ext: mdx
 - type: directory
   path: src/content/hero
   label: Hero

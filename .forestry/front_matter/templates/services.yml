@@ -27,5 +27,3 @@ fields:
     min: 
     max: 
   label: Services List
-pages:
-- src/content/services/services.md

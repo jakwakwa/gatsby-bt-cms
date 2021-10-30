@@ -9,15 +9,11 @@ sections:
     label: Services
     create: documents
     match: "**/*"
-    templates:
-      - services
   - type: directory
     path: src/content/about
     label: About
     create: documents
     match: "**/*"
-    templates:
-      - about
   - type: directory
     path: src/content/hero
     label: Hero

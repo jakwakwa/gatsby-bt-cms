@@ -17,11 +17,5 @@ fields:
     schema:
       format: markdown
   label: Paragraph
-- name: who_we_are
-  type: text
-  config:
-    required: false
-  label: Who We Are
-  hidden: false
 pages:
 - src/content/about/about.md

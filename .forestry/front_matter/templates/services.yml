@@ -3,8 +3,13 @@ label: Services
 hide_body: true
 fields:
 - type: text
-  name: about_title
-  label: about_title
+  name: serv_title
+  label: Title
 - type: textarea
-  name: about_paragraph
-  label: about_paragraph
+  name: serv_paragraph
+  label: Paragraph
+- name: serv_list_heading
+  type: text
+  config:
+    required: false
+  label: List Heading

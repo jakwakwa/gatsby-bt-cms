@@ -16,3 +16,5 @@ fields:
     schema:
       format: markdown
   label: Paragraph
+pages:
+- src/content/about/about.mdx

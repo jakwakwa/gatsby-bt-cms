@@ -1,0 +1,16 @@
+---
+label: What We Do
+hide_body: true
+fields:
+- type: text
+  name: title-about
+  label: title-about
+- type: textarea
+  name: paragraph-about
+  label: paragraph-about
+- type: text
+  name: list_heading_about
+  label: list_heading_about
+- type: text
+  name: list_about
+  label: list_about

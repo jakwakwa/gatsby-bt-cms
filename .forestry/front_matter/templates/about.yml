@@ -1,7 +1,7 @@
 ---
 label: About
 hide_body: true
-display_field: who_we_are
+display_field: title-about
 fields:
 - name: title-about
   type: text
@@ -22,6 +22,6 @@ fields:
   config:
     required: false
   label: Who We Are
-  hidden: true
+  hidden: false
 pages:
 - src/content/about/about.md

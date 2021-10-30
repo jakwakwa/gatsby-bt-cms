@@ -1,0 +1,13 @@
+---
+services_title: WHAT WE DO
+services_paragraph: BigTalent believes in the value of using data, analytics techniques,
+  and scientific principles to support economic growth and sustainability of businesses,
+  especially during these turbulent economic times.  This is why we focus our recruitment
+  activities in this space, dedicated to connecting exceptional data talent to our
+  clients, so that ambitious projects can come to fruition
+serviceslist_heading: Specialist recruitment position
+services_list:
+- Data Engineers
+- Data Scientists
+
+---

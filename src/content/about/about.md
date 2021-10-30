@@ -6,7 +6,7 @@ paragraph-about: |-
   As founder of BigTalent, Thelma’s expertise includes the placement of technical Quantitative, Actuarial and Finance professionals throughout South Africa. She has recruited for large banks and listed corporates, as well as SMEs and start-ups. Specific companies include ABSA, FNB, The Reserve Bank, as well as non-financial services at such companies as Barloworld, Bidvest and Imperial, to name a few. Thelma works with her team of researchers to identify and track top talent in the market.
 list_heading_about: ''
 list_about: ''
-title_about: What We Do
+title_about: Who We Are
 paragraph_about: lknklk
 
 ---

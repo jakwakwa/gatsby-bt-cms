@@ -7,5 +7,15 @@ paragraph-info: BigTalent believes in the value of using data, analytics techniq
   clients, so that ambitious projects can come to fruition
 list_info_title: Specialist recruitment position
 list_info: ''
+list-info: |-
+  Data Scientists
+  Data Engineers
+  Machine Learning Engineers
+  Data Analysts
+  Data Architects
+  Business Intelligence Developers
+  Visualizers
+  Reporting Specialists
+  Story Tellers
 
 ---

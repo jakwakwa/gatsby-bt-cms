@@ -21,3 +21,10 @@ fields:
   config:
     required: false
   label: List Heading
+- name: services_list
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Services List

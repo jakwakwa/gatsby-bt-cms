@@ -12,8 +12,14 @@ fields:
 - type: text
   name: list_info_title
   label: List Title
-- type: text
-  name: list_info
+- name: list-info
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
   label: List
 pages:
 - src/content/what-we-do/whatWeDo.md

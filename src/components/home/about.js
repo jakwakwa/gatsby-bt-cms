@@ -26,7 +26,7 @@ const About = ({ title, paragraph }) => {
       </div>
       <div style={{ width: "50%" }}>
         <StaticImage
-          src="../images/who-we-are.png"
+          src="../../images/who-we-are.png"
           // width={300}
           quality={95}
           formats={["auto", "webp", "avif"]}

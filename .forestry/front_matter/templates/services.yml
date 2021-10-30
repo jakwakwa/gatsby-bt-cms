@@ -3,30 +3,30 @@ label: Services
 hide_body: true
 display_field: services_title
 fields:
-- type: text
-  name: services_title
-  label: Title
-- type: textarea
-  name: services_paragraph
-  label: Paragraph
-  default: ''
-  config:
-    wysiwyg: false
-  required: false
-  wysiwyg: false
-  schema:
-    format: markdown
-- name: serviceslist_heading
-  type: text
-  config:
+  - type: text
+    name: services_title
+    label: Title
+  - type: textarea
+    name: services_paragraph
+    label: Paragraph
+    default: ""
+    config:
+      wysiwyg: false
     required: false
-  label: List Heading
-- name: services_list
-  type: list
-  config:
-    use_select: false
-    min: 
-    max: 
-  label: Services List
+    wysiwyg: false
+    schema:
+      format: markdown
+  - name: serviceslist_heading
+    type: text
+    config:
+      required: false
+    label: List Heading
+  - name: services_list
+    type: list
+    config:
+      use_select: false
+      min:
+      max:
+    label: Services List
 pages:
-- src/content/services/services.md
+  - src/content/services/services.mdx

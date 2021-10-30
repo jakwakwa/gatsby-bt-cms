@@ -31,6 +31,7 @@ const IndexPage = () => {
             serviceslist_heading
             services_paragraph
             services_title
+            services_list
           }
         }
       }
@@ -46,6 +47,8 @@ const IndexPage = () => {
   const servParagraph = jsStr.allMdx.nodes[2].frontmatter.services_paragraph
   const servTitle = jsStr.allMdx.nodes[2].frontmatter.services_title
   const servListHeading = jsStr.allMdx.nodes[2].frontmatter.serviceslist_heading
+
+  const servList = jsStr.allMdx.nodes[2].frontmatter.services_list
 
   return (
     <>
@@ -69,12 +72,13 @@ const IndexPage = () => {
           </div>
         </div>
 
-        <About title={aboutTitle} paragraph={aboutParagraph} />
         <Services
           title={servTitle}
           paragraph={servParagraph}
           listHeading={servListHeading}
+          list={servList}
         />
+        <About title={aboutTitle} paragraph={aboutParagraph} />
       </Layout>
     </>
   )

@@ -21,5 +21,12 @@ fields:
     schema:
       format: markdown
   label: List
+- name: list_services_info
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: List Services
 pages:
 - src/content/what-we-do/whatWeDo.md

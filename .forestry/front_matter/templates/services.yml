@@ -29,3 +29,4 @@ fields:
   label: Services List
 pages:
 - src/content/services/services.mdx
+- src/content/services/what-we-do-copy.mdx

@@ -1,0 +1,38 @@
+import * as React from "react"
+import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
+import { useStaticQuery, graphql } from "gatsby"
+import { whoWeAre, whoWeAreBody } from "../../styles/layout.module.css"
+
+const About = () => {
+  // const data = useStaticQuery(graphql`
+  //   query AboutQuery {
+  //     mdx {
+  //       frontmatter {
+  //           title-about
+  //           paragraph-about
+  //       }
+  //     }
+  //   }
+  // `)
+
+  return (
+    <div className={whoWeAre} style={{ display: "flex" }}>
+      <div className={whoWeAreBody} style={{ width: "50%" }}>
+        {/* <h1>{data.mdx.frontmatter.title_about}</h1>
+        <p>{data.mdx.frontmatter.paragraph_about}</p> */}
+      </div>
+      <div style={{ width: "50%" }}>
+        <StaticImage
+          src="../images/who-we-are.png"
+          // width={300}
+          quality={95}
+          formats={["auto", "webp", "avif"]}
+          alt="A Gatsby astronaut"
+          style={{ marginBottom: `1.45rem` }}
+        />
+      </div>
+    </div>
+  )
+}
+export default About

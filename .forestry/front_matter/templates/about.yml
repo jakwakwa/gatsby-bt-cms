@@ -2,19 +2,17 @@
 label: about
 hide_body: false
 fields:
-- name: about_title
-  type: text
-  config:
-    required: false
-  label: Title
-- name: about_paragraph
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Paragraph
-pages:
-- src/content/about/about.mdx
+  - name: about_title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: about_paragraph
+    type: textarea
+    default: ""
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Paragraph

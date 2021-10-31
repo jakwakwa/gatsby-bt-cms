@@ -11,13 +11,13 @@
   top: 0;
 }
 .header > div {
-  padding: 08px 60px;
+  padding: 8px 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .layoutstyles {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -42,10 +42,10 @@
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
   padding-top: 70px;
-  background-size: 103vw;
+  background-size: 110vw;
   background-repeat: no-repeat;
-  width: 133vw;
-  left: -4px;
+  width: 100vw;
+  left: 0px;
   height: 1330px;
   background-position-x: -5px;
   background-position-y: -58px;
@@ -60,11 +60,12 @@
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
   padding-top: 70px;
-  background-size: 100vw;
+  padding-left: 0;
+  background-size: 103vw;
   background-repeat: no-repeat;
-  width: 94vw;
-  height: 661px;
-  background-position-x: -89px;
+  width: 100vw;
+  height: calc(100vh - 126px);
+  background-position-x: -7px;
   background-position-y: -54px;
   overflow: hidden;
   margin-top: 64px;
@@ -78,7 +79,15 @@
   width: 60%;
   position: absolute;
   top: 10rem;
-  right: 0rem;
+  right: -0rem;
+}
+
+.hero .heroImg > div {
+  top: 30px;
+  /* height: 99vh; */
+  width: 75%;
+  display: block !important;
+  margin-right: 0;
 }
 
 .headerdiv {
@@ -87,7 +96,7 @@
   position: absolute;
   z-index: 999999999;
   left: 0;
-  width: 102vw;
+  width: 100vw;
 }
 
 .hero h1,
@@ -203,6 +212,52 @@
 .footer a {
   color: white;
   font-weight: 800;
+}
+
+.servicesBg {
+  top: 786px;
+}
+.layoutstyles {
+  max-width: 100% !important;
+}
+.hero {
+  padding-left: 9%;
+}
+@media (max-width: 1460px) {
+  .layoutstyles {
+    max-width: 100%;
+  }
+  .hero {
+    padding-left: 5%;
+    font-family: "Montserrat", sans-serif;
+    /* font-size: 36px; */
+    /* padding-top: 70px; */
+    background-size: 110vw;
+    /* background-repeat: no-repeat;  */
+    width: 100vw;
+    height: calc(100vh - 250px);
+    background-position-x: 0px;
+    background-position-y: 0px;
+    /* overflow: hidden; */
+    /* margin-top: 51px; */
+    display: flex;
+  }
+
+  .servicesBg {
+    top: 636px;
+  }
+  .hero .heroImg {
+    width: 50%;
+    position: absolute;
+    top: 10rem;
+    right: 2rem;
+  }
+
+  .hero .heroImg > div {
+    top: 0px;
+    width: initial;
+    display: inline-block !important;
+  }
 }
 
 @media (max-width: 460px) {

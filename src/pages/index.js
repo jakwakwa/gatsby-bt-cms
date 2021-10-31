@@ -10,6 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { hero, headerdiv, heroImg } from "../styles/layout.module.css"
 import About from "../components/home/about"
 import Services from "../components/home/services"
+import Contact from "../components/home/contact"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -88,6 +89,7 @@ const IndexPage = () => {
           paragraph={aboutParagraph}
           secondParagraph={aboutParagraphSecond}
         />
+        <Contact />
       </Layout>
     </>
   )

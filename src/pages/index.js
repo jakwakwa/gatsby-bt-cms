@@ -1,5 +1,5 @@
 import * as React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
@@ -65,6 +65,15 @@ const IndexPage = () => {
             <h1>{data.mdx.frontmatter.heading}</h1>
             <h2>{data.mdx.frontmatter.secondary_heading}</h2>
             <p>{data.mdx.frontmatter.paragraph}</p>
+            <Link
+              to="#contact"
+              style={{
+                textDecoration: `none`,
+                fontFamily: "Montserrat",
+              }}
+            >
+              {`Contact Us`}
+            </Link>
           </div>
           <div className={heroImg}>
             <StaticImage

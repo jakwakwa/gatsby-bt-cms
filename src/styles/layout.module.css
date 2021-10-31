@@ -61,6 +61,7 @@
   color: #50b0a3;
   transition: background-color 0.2s ease-in;
   font-size: 14px;
+  font-weight: 800;
 }
 .servicesBg {
   background-image: url("../images/cpconceptp2.png");
@@ -289,6 +290,7 @@
   left: 0px;
   padding: 30px;
   text-align: right;
+  margin-top: 0px !important;
 }
 .footer a {
   color: white;
@@ -360,6 +362,40 @@ button {
     0 8px 8px rgba(0, 0, 0, 0.14);
   box-shadow: 0 2px 2px rgba(0, 80, 125, 0.68), 0 8px 8px rgba(0, 0, 0, 0.14);
   text-transform: uppercase !important;
+}
+
+.hero a,
+.header .contactBtn {
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  height: 3.5rem;
+  padding: 15px 20px;
+  outline: none;
+  cursor: pointer;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  margin-top: 20px !important;
+  height: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 80, 125, 0.68),
+    0 8px 8px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 2px 2px rgba(0, 80, 125, 0.68), 0 8px 8px rgba(0, 0, 0, 0.14);
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  width: 250px !important;
+  background: #4ea999;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 80, 125, 0.68),
+    0 8px 8px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 2px 2px rgba(0, 80, 125, 0.68), 0 8px 8px rgba(0, 0, 0, 0.14);
+  text-transform: uppercase !important;
+}
+
+.contactBtn:hover,
+button:hover,
+.hero a:hover {
+  background-color: #305764;
 }
 @media (max-width: 1460px) {
   .layoutstyles {

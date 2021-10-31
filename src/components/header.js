@@ -2,7 +2,7 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import { headerStyles, header } from "../styles/layout.module.css"
+import { headerStyles, header, contactBtn } from "../styles/layout.module.css"
 
 const Header = ({ siteTitle }) => (
   <header className={header}>
@@ -13,13 +13,13 @@ const Header = ({ siteTitle }) => (
         formats={["auto", "webp", "avif"]}
         alt="A Gatsby astronaut"
       />
-      <h1 className={headerStyles} style={{ margin: 0 }}>
+      <div className={headerStyles} style={{ marginTop: "10px" }}>
         <Link
           to="#about"
           style={{
             textDecoration: `none`,
             fontFamily: "Montserrat",
-            marginRight: `40px`,
+            marginRight: `20px`,
           }}
         >
           {`Who We Are`}
@@ -33,7 +33,18 @@ const Header = ({ siteTitle }) => (
         >
           {`What We Do`}
         </Link>
-      </h1>
+        <Link
+          to="#contact"
+          className={contactBtn}
+          style={{
+            textDecoration: `none`,
+            fontFamily: "Montserrat",
+            marginLeft: "20px",
+          }}
+        >
+          {`Contact`}
+        </Link>
+      </div>
     </div>
   </header>
 )

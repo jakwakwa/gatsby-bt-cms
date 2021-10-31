@@ -7,7 +7,12 @@ import Seo from "../components/seo"
 
 import { useStaticQuery, graphql } from "gatsby"
 
-import { hero, headerdiv, heroImg } from "../styles/layout.module.css"
+import {
+  hero,
+  headerdiv,
+  heroImg,
+  heroLinkWrapper,
+} from "../styles/layout.module.css"
 import About from "../components/home/about"
 import Services from "../components/home/services"
 import Contact from "../components/home/contact"
@@ -65,15 +70,17 @@ const IndexPage = () => {
             <h1>{data.mdx.frontmatter.heading}</h1>
             <h2>{data.mdx.frontmatter.secondary_heading}</h2>
             <p>{data.mdx.frontmatter.paragraph}</p>
-            <Link
-              to="#contact"
-              style={{
-                textDecoration: `none`,
-                fontFamily: "Montserrat",
-              }}
-            >
-              {`Contact Us`}
-            </Link>
+            <div className={heroLinkWrapper}>
+              <Link
+                to="#contact"
+                style={{
+                  textDecoration: `none`,
+                  fontFamily: "Montserrat",
+                }}
+              >
+                {`Contact Us`}
+              </Link>
+            </div>
           </div>
           <div className={heroImg}>
             <StaticImage

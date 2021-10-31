@@ -396,8 +396,8 @@
     width: 100vw;
   }
   .headerStyles > a {
-    margin-right: 10px !important;
-    font-size: 13px;
+    margin-right: 8px !important;
+    font-size: 10px;
     line-height: 0.2;
     padding: 2px !important;
   }
@@ -416,33 +416,44 @@
     max-width: 130px !important;
   }
   .whatWeDo {
-    flex-direction: column-reverse;
+    flex-direction: column;
     position: relative;
+
+    padding: 0 2%;
+    padding-bottom: 50px;
   }
 
   .whatWeDo h1 {
     font-size: 30px;
+    padding-top: 0;
+    margin-top: -20px;
   }
 
   .whatWeDo > div {
-    margin-top: 0 !important;
+    /* margin-top: 60px !important;
     width: 61%;
     right: 0px;
     margin-top: 17px;
-    align-self: self-end;
+    align-self: self-end; */
+
+    margin-top: 60px !important;
+    width: 71%;
+    right: 0px;
+    margin-top: 17px;
+    align-self: center;
   }
 
   .servicesBg {
     font-family: "Montserrat", sans-serif;
     font-size: 36px;
     padding-top: 70px;
-    background-size: 519vw;
+    background-size: 691vw;
     background-repeat: no-repeat;
     width: 100vw;
-    left: 8px;
-    height: 1254px;
-    background-position-x: -586px;
-    background-position-y: -93px;
+    left: 0px;
+    height: 232%;
+    background-position-x: -794px;
+    background-position-y: -90px;
     overflow: hidden;
     position: absolute;
     white-space: nowrap;
@@ -466,7 +477,8 @@
     flex-direction: column-reverse;
     height: auto;
     width: 100% !important;
-    padding-bottom: 50px;
+
+    padding: 0 2%;
   }
 
   .whoWeAre p {
@@ -475,17 +487,29 @@
 
   .whoWeAreBody {
     width: 100% !important;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-bottom: 10px;
   }
+
+  .whoWeAreBody h1 {
+    font-size: 30px;
+    padding-top: 0;
+  }
   .whoWeAre div:last-child {
-    height: 230px;
-    width: 70% !important;
+    /* height: 230px;
+    width: 80% !important;
     padding-bottom: 0;
     margin-bottom: 0;
     padding-left: 20px;
     margin-left: 20px;
-    /* text-align: center; */
+    text-align: center; */
+    height: 230px;
+    width: 83% !important;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    /* padding-left: 20px; */
+    /* margin-left: 20px; */
+    text-align: center;
   }
 }

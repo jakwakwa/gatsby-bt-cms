@@ -610,6 +610,7 @@ button:hover,
 
   .contactBtn {
     visibility: hidden;
+    display: none;
   }
 
   .heroLinkWrapper {
